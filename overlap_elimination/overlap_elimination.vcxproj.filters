@@ -18,39 +18,36 @@
     <ClCompile Include="pch.cpp">
       <Filter>資源檔</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\my_polygon.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlap_elimination.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtree.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="test\main.cpp">
       <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="rtree.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
-    <ClCompile Include="overlap_elimination.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
-    <ClCompile Include="my_polygon.cpp">
-      <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="include\correct.hpp">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="correct.hpp">
+    <ClInclude Include="include\graph.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="overlap_elimination.h">
+    <ClInclude Include="include\my_polygon.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="types.h">
+    <ClInclude Include="include\overlap_elimination.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="rtree.h">
+    <ClInclude Include="include\rtree.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="graph.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="my_polygon.h">
+    <ClInclude Include="include\types.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

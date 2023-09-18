@@ -2,11 +2,6 @@
 #include "my_polygon.h"
 #include "overlap_elimination.h"
 
-#include <Windows.h>
-#include <iostream>
-#include <filesystem>
-
-
 int main() {
     MyPolygonSmartPtrs polys{
         MyPolygon(Point_xys{ {0, 2}, { 0,4 }, { 6,4 }, { 6,2 },{0, 2} }),
