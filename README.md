@@ -9,8 +9,8 @@ Remove overlapped regions in polygon sets, while ensuring that the intersection 
 ![overlap elimination process](https://github.com/Ching-Chieh-Wang/overlap_elimination/assets/81002444/4f5effb8-5524-4f67-b02c-7b406cbdfa14)
 
 # Library Package Installation
-1. [VTK](https://vtk.org/download/)
-2. [boost](https://www.boost.org/users/download/)
+1. [VTK](https://vtk.org/download/) : For polygon visualization
+2. [boost](https://www.boost.org/users/download/) : For polygon boolen operation
 
 # How to use
 1. Include header files
