@@ -1,5 +1,8 @@
 # Overlap Elimination
 Remove overlapped regions in polygon sets, while ensuring that the intersection boundaries are minimized. This program is especially suitable for image moisaicing (GIS, SFM).. 
+
+![overlap_elimination](https://github.com/Ching-Chieh-Wang/overlap_elimination/assets/81002444/ab82b94a-f762-4e82-8a52-3749fbbad266)
+
 # Description
 1. Polygon assignment: Assinging polygons. As shown in Figure 1(a), assume the user assigns two ranges _F_<sub>1</sub> and _F_<sub>2</sub>, each forms one polygon _R_<sub>1</sub> and _R_<sub>2</sub> respectively.
 2. Polygon overlap detection: Using 2-D polygon boolen operations to detect all overlapped polygon pairs. Calculate the intersection polygon, difference polygons and the crossing points for each capture range pairs. As shown in Figure 1(b), the polygons _R_<sub>1</sub> and _R_<sub>2</sub> intersect to each other and form an intersection polygon ( _R_<sub>1</sub> ∩ _R_<sub>2</sub> ) and two difference polygons ( _R_<sub>1</sub> - _R_<sub>2</sub>, _R_<sub>2</sub> - _R_<sub>1</sub> ). The _R_<sub>1</sub> and _R_<sub>2</sub> crossing points ( _P_<sub>1</sub>, _P_<sub>2</sub>, _P_<sub>3</sub>, _P_<sub>4</sub> ) are estimated.
