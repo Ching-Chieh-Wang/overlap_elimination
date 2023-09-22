@@ -17,12 +17,13 @@ Remove overlapped regions in polygon sets, while ensuring that the intersection 
 
 # How to use
 1. Include header files
-2. Using MyPolygonSmartPtrs to declare polygons
+2. Using MyPolygonSmartPtrs to declare polygons ( Clock-wise points, the first point must be identical to the last point, no self-intersection, no inner ring)
 3. Declare OverlapElimination
 4. (Optional) Use OverlapElimination::showPolys() function to visualize original polygons
 5. Use OverlapElimination::showPolys() function to perform overlap elimination algorithm and get result. The result is an unordered_map type, key: the index of the original polygon, value: the corresponding overlap eliminated polygons
 6. (Optional) Use OverlapElimination::showResults() function to visualize overlap eliminated result. 
 ```cpp
+//1
 #include "types.h"
 #include "my_polygon.h"
 #include "overlap_elimination.h"
@@ -32,11 +33,11 @@ int main() {
         MyPolygon(Point_xys{ {0, 2}, { 0,4 }, { 6,4 }, { 6,2 },{0, 2} }),
         MyPolygon(Point_xys{ {4,0}, { 4,6}, { 10,6}, { 10,0},{4,0} }),
         MyPolygon(Point_xys{ {2,3}, { 2,8}, { 12,8}, { 12,3},{2,3} })
-    };
-    OverlapElimination overlapEliminator;
-    overlapEliminator.showPolys(polys);
-    std::unordered_map<int, MyPolygonSmartPtrs> result=overlapEliminator.run(polys);  
-    overlapEliminator.showResults(result);
+    }; //2
+    OverlapElimination overlapEliminator; //3
+    overlapEliminator.showPolys(polys); //4
+    std::unordered_map<int, MyPolygonSmartPtrs> result=overlapEliminator.run(polys);  //5
+    overlapEliminator.showResults(result); //6
 }
 ```
 ![OE_demo](https://github.com/Ching-Chieh-Wang/overlap_elimination/assets/81002444/ec2ca987-902c-445c-a44d-586d0b5c8b21)
